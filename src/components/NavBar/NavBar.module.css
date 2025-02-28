@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   width: 100%;
+  border-bottom: 1px solid rgb(184, 184, 184);
   background: linear-gradient(
     to right,
     #f0f0f0,
@@ -32,15 +33,56 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+  padding: 20px;
+  max-width: 1400px;
+}
+
+.menu {
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 8px;
-  padding: 14px;
-  max-width: 1200px;
+}
+
+.menuOpen {
+  display: flex !important;
+  width: 100vw !important;
+  background: linear-gradient(
+    to right,
+    #f0f0f0,
+    #f1f1f1,
+    #f3f3f3,
+    #f4f4f4,
+    #f6f6f6,
+    #f7f7f7,
+    #f8f8f8,
+    #f8f8f8,
+    #f7f7f7,
+    #f9f9f9,
+    #f8f8f8,
+    #f7f7f7,
+    #f8f8f8,
+    #f7f7f7,
+    #f6f6f6,
+    #f5f5f5,
+    #f3f3f3,
+    #f1f1f1,
+    #eeeeee
+  ) !important;
 }
 
 .contactsContainer {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.link {
+  color: black;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .link:hover {
@@ -50,6 +92,7 @@
 .workTimeText {
   font-size: 14px;
   color: #848383;
+  width: 328px;
 }
 
 .phone {
@@ -61,4 +104,81 @@
   color: red;
   border-bottom: 1px dashed red;
   font-size: 14px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.burgerLine {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burgerLineOpen:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burgerLineOpen:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerLineOpen:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+@media (max-width: 1272px) {
+  .workTimeText {
+    width: fit-content;
+    text-align: end;
+  }
+
+  .menu {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1101px) {
+  .contactsContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 873px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 500px) {
+  .navBarContainer {
+    padding: 10px;
+  }
 }

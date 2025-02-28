@@ -1,4 +1,5 @@
 import MyLayoutContainer from "@/components/MyLayoutContainer/MyLayoutContainer";
+import About from "@/view/About/About";
 import PreviewSection from "@/view/PreviewSection/PreviewSection";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <div>
       <PreviewSection />
       <MyLayoutContainer>
-        {/* Свои компоненты добавляй сюда */}
+        <About />
       </MyLayoutContainer>
     </div>
   );
