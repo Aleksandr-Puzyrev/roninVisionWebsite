@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import NavBar from "@/components/NavBar/NavBar";
 import { geistMono, geistSans, inter, manrope, unbounded } from "@/consts/font-family.consts";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ronin Vision",

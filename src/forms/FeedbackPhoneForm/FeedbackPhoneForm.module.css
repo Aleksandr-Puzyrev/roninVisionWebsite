@@ -1,0 +1,59 @@
+.inputLabel {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 41px;
+  font-family: var(--font-manrope);
+  font-weight: 400;
+}
+
+.input {
+  margin-top: 6px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #595252;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #dad5d5;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 16px;
+  color: #595252;
+  margin-top: 6px;
+  font-family: var(--font-manrope);
+}
+
+.submitButton {
+  width: 100%;
+  margin-top: 30px;
+  font-family: var(--font-manrope);
+  padding: 18px 14px 14px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: linear-gradient(to bottom, #ff9895, #ff0800);
+}
+
+.submitButton:hover {
+  background: linear-gradient(to bottom, #f94848, #cc0000);
+}
+
+.submitButton > span {
+  font-size: 12px;
+}
+
+.errorContainer {
+  margin-top: 2px;
+  height: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
