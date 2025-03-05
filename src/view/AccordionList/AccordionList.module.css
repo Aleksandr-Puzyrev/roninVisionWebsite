@@ -1,0 +1,7 @@
+.accGap {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+	padding-top: 27px;
+	padding-bottom: 65px;
+}
