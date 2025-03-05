@@ -1,0 +1,74 @@
+.accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.collapse {
+	display: none;
+}
+
+.open {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+
+.btn {
+	text-align: left;
+	width: 100%;
+	color: #FF0800;
+	gap: 25px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.collapseBody {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	padding-bottom: 8px;
+}
+
+.collapseItem {
+	display: flex;
+	justify-content: space-between;
+	gap: 110px;
+	text-align: start;
+}
+
+.h5 {
+	font-weight: bold;
+	font-size: 25px;
+	color: black;
+}
+.itemName {
+	width: 100%;
+	font-weight: 400;
+	font-size: 30px;
+	color: black;
+	line-height: 30px;
+}
+.divLine {
+	display: flex;
+	justify-content: start;
+}
+
+.line {
+  display: inline-block;
+  border-top: 1px solid rgb(255,8,0);
+  width: 100%;
+}
+
+.strelkaDiv {
+	display: flex;
+	justify-content: space-between;
+}
+
+.strelka {
+	
+}
+
+.strelkaReverse {
+	transform: rotate(180deg);
+}
