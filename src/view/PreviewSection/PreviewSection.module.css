@@ -2,31 +2,32 @@
   display: flex;
   justify-content: center;
   background-color: black;
+  overflow: hidden;
 }
 
 .container {
   position: relative;
-  max-width: 1200px;
-  padding: 14px;
+  max-width: 1400px;
+  padding: 20px;
   min-height: 700px;
   color: white;
 }
 
 .blur {
   position: absolute;
-  top: -11;
-  left: 0;
+  top: -11px;
+  left: 0px;
 }
 
 .blurBig {
   position: absolute;
-  right: -400;
-  top: -11;
+  right: -400px;
+  top: -11px;
 }
 
 .spiral {
   position: absolute;
-  right: -100;
+  right: -120px;
 }
 
 .textContainer {
@@ -39,7 +40,8 @@
   font-weight: 900;
   margin-top: 102px;
   line-height: 49.6px;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .subtitle {
@@ -48,6 +50,9 @@
   font-size: 30px;
   line-height: 40.98px;
   color: rgba(224, 224, 224, 1);
+  font-family: var(--font-manrope), sans-serif;
+  position: relative;
+  z-index: 2;
 }
 
 .price {
@@ -56,10 +61,13 @@
   font-size: 55px;
   line-height: 68.2px;
   color: rgba(153, 194, 255, 1);
+  position: relative;
+  z-index: 2;
 }
 
 .button {
   position: relative;
+  z-index: 2;
   margin-top: 72px;
   font-weight: 500;
   font-size: 30px;
@@ -71,13 +79,117 @@
 
 .monitor {
   position: absolute;
-  right: -100;
-  top: -90;
+  right: -100px;
+  top: -70px;
   z-index: 1;
+  max-height: 860px;
 }
 
 .cursor {
   position: absolute;
-  bottom: -70;
-  right: -70;
+  bottom: -70px;
+  right: -70px;
+}
+
+@media (max-width: 1195px) {
+  .button {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1043px) {
+  .price {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 956px) {
+  .container {
+    min-height: 567px;
+    width: 100%;
+  }
+
+  .textContainer {
+    display: block;
+    height: 100%;
+  }
+
+  .textContainerMobile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-top: 18px;
+    line-height: 27px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .price {
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .button {
+    width: 100%;
+    margin: 12px 0;
+    font-size: 22px;
+    padding: 15px 35px;
+  }
+
+  .cursor {
+    width: 35px;
+    height: 35px;
+    bottom: -10px;
+    right: -10px;
+  }
+
+  .monitor {
+    right: 50%;
+    top: 50%;
+    transform: translate(45%, -45%);
+    max-width: 428px;
+    max-height: 428px;
+  }
+
+  .blurBig {
+    width: 465px;
+    right: 0px;
+    top: 50%;
+    transform: translate(20%, -45%) rotate(90deg);
+  }
+
+  .spiral {
+    width: 222px;
+    right: 0px;
+    top: 50%;
+    transform: translate(0%, -45%);
+  }
+
+  .blur {
+    top: -11px;
+    left: -100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
+  .cursor {
+    right: 0px;
+  }
 }

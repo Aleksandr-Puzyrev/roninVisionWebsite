@@ -1,0 +1,118 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 117px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.table {
+  font-family: var(--font-manrope);
+}
+
+.tableHead {
+  font-size: 25px;
+  line-height: 30px;
+  color: #99c2ff;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.tableHead > tr > th {
+  padding-bottom: 13px;
+}
+
+.tableBody > tr {
+  padding-bottom: 30px;
+}
+
+.tableBody > tr > td {
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.tableBody > tr > td:last-child {
+  padding-right: 0;
+}
+
+.modelContainer,
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+  gap: 30px;
+}
+
+.modelContainer > div {
+  width: max-content;
+}
+
+.priceContainer > div {
+  width: max-content;
+  font-weight: 800;
+}
+
+.priceContainer > div {
+  background-color: #99c2ff;
+}
+
+.recomendationBody {
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 400;
+}
+
+.actionContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 50px;
+}
+
+.button {
+  color: white;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 17px;
+  background: linear-gradient(to bottom, rgba(255, 8, 0, 1), rgba(184, 12, 6, 1));
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 54px;
+}
+
+.link:hover {
+  color: #b1b1b1;
+}
+
+@media (max-width: 1058) {
+  .actionContainer {
+    grid-template-columns: 1fr auto auto;
+  }
+}
+
+@media (max-width: 1000) {
+  .modelContainer,
+  .priceContainer {
+    font-size: 24px;
+    gap: 20px;
+  }
+
+  .image {
+    min-width: 130px;
+  }
+}

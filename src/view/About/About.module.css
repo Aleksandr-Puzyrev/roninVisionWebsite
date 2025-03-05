@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 41;
+  padding-bottom: 10px;
+}
+
+.h2 {
+  margin-top: 23px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.mediumText {
+  font-weight: 500;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 19px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.textContent {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+  font-family: var(--font-manrope);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-indent: 1.25cm;
+}
+
+.videoContainer {
+  position: relative;
+}
+
+.phone {
+  min-width: 772px;
+  height: 717px;
+  border-radius: 50px;
+  position: absolute;
+  top: -52px;
+  left: 0;
+}
+
+.video {
+  width: 250px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 30px;
+  position: absolute;
+  top: 35px;
+  left: 104px;
+}
+
+.mobileAboutList {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .contentContainer {
+    grid-template-columns: 1fr;
+  }
+  .desktopAboutList {
+    display: none;
+  }
+
+  .aboutVideoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mobileAboutList {
+    display: block;
+  }
+
+  .phone {
+    min-width: 451px;
+    height: 392px;
+    top: -35px;
+    left: -20px;
+  }
+
+  .video {
+    width: 150px;
+    height: 300px;
+    border-radius: 20px;
+    top: 11px;
+    left: 39px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    gap: 16px;
+  }
+
+  .h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .info {
+    gap: 19px;
+  }
+
+  .textContent {
+    font-size: 16px;
+    line-height: 22px;
+    gap: 16px;
+  }
+
+  .contentContainer {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  .phone {
+    left: -30px;
+  }
+
+  .video {
+    left: 29px;
+  }
+}
+
+@media (max-width: 388px) {
+  .phone {
+    left: -40px;
+  }
+
+  .video {
+    left: 19px;
+  }
+}

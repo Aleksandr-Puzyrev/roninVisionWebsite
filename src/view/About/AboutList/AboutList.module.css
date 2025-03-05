@@ -1,0 +1,61 @@
+.aboutList {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.qualityIcon {
+  margin-top: 7px;
+}
+
+.bestPriceIcon {
+  margin-top: -4px;
+}
+
+.aboutItem > div {
+  font-family: var(--font-manrope);
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #ff0800;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .aboutList {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .h3 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .aboutItem {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .qualityIcon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .bestPriceIcon {
+    width: 52px;
+    height: 41px;
+  }
+}

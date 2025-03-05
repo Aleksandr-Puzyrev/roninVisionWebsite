@@ -1,0 +1,127 @@
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  min-height: 700px;
+  margin-top: -150px;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  font-size: 30px;
+  line-height: 135%;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.yMapContainer {
+  margin: auto;
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.yMapContainer::before,
+.yMapContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.yMapContainer::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+.yMapContainer::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.cloud {
+  position: absolute;
+  top: -100px;
+}
+
+.contacts {
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactsTitle {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.contactsBody {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  line-height: 125%;
+}
+
+.PhoneEmailContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.privacyPolicy {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -50px;
+  left: 0px;
+  z-index: 11;
+}
+
+.privacyPolicyTitle {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.privacyPolicyBody {
+  font-weight: 300;
+  font-size: 11.5px;
+  font-family: var(--font-inter), sans-serif;
+}
+
+@media (max-width: 641px) {
+  .yMapContainer div:last-child {
+    width: 100% !important;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 125%;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 18px;
+    line-height: 115%;
+  }
+}

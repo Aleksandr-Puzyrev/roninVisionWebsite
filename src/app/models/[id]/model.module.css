@@ -1,0 +1,60 @@
+.container {
+  padding: 94px 0 60px;
+  color: #212121;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.descriptionContainer,
+.equipmentContainer,
+.characteristicsContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding-top: 90px;
+}
+
+.characteristicsContainer {
+  grid-template-columns: 3fr 5fr 1fr;
+}
+
+.descriptionTitle,
+.equipmentTitle,
+.characteristicsTitle {
+  font-size: 35px;
+  list-style: 48px;
+  font-weight: 600;
+}
+
+.descriptionBody,
+.equipmentBody,
+.characteristicsBody {
+  font-size: 25px;
+  list-style: 34px;
+  font-weight: 500;
+}
+
+.basicCharacteristics,
+.screenOptions {
+  color: #fe4625;
+  padding-top: 15px;
+}
+
+.basicCharacteristicsContainer,
+.screenOptionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.basicCharacteristicTitle,
+.screenOptionsTitle {
+  font-size: 20px;
+  color: #929292;
+  line-height: 191%;
+}
+
+.basicCharacteristicBody,
+.screenOptionsBody {
+  font-size: 20px;
+  line-height: 191%;
+}
