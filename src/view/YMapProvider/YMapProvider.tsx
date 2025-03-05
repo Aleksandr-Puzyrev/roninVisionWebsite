@@ -6,7 +6,7 @@ import styles from "./YMapProvider.module.css";
 
 export default function YMapProvider() {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="ymap">
       <div className={styles.yMapContainer}>
         <div className={styles.title}>
           У вас остались вопросы?

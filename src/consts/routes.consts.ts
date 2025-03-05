@@ -1,6 +1,6 @@
 export const Routes = [
   {
-    path: "/",
+    path: "/#about",
     label: "О нас",
   },
   {
@@ -8,7 +8,7 @@ export const Routes = [
     label: "Преимущества",
   },
   {
-    path: "/",
+    path: "/models",
     label: "Модели",
   },
   {
@@ -24,7 +24,7 @@ export const Routes = [
     label: "Отзывы",
   },
   {
-    path: "/",
+    path: "/#ymap",
     label: "Контакты",
   },
 ];

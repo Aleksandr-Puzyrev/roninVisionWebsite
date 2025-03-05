@@ -5,7 +5,7 @@ import AboutList from "./AboutList/AboutList";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <h2 className={styles.h2}>
         <span className={styles.boldText}>Кто мы</span> и{" "}
         <span className={styles.boldText}>почему</span> нам доверяют?

@@ -8,7 +8,7 @@ import FeedbackCard from "./FeedbackCard/FeedbackCard";
 
 const Feedback = () => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="feedback">
       <h2 className={styles.h2}>
         Записаться <br className={styles.mobileBr} />
         на бесплатный <br />

@@ -1,0 +1,116 @@
+.name {
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.modelInfoContainer {
+  display: grid;
+  grid-template-columns: 5fr 4fr 2fr;
+  gap: 22px;
+  padding-top: 40px;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 9px;
+}
+
+.tabImagesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.descriptionList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.characteristics {
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #929292;
+}
+
+.characteristicsBody {
+  color: #212121;
+}
+
+.descriptionLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.descriptionLink {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #fe4625;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.priceContainer {
+  padding-left: 48px;
+}
+
+.noDiscountContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.noDiscount {
+  font-size: 20px;
+  line-height: 27px;
+  color: #929292;
+  position: relative;
+}
+
+.span {
+  border: 1px solid #fe4625;
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  width: 100%;
+}
+
+.discount {
+  font-size: 10px;
+  line-height: 14px;
+  background-color: #99c2ff;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.price {
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 800;
+  padding-top: 7px;
+}
+
+.priceRed {
+  color: #fe4625;
+}
+
+.priceButton {
+  margin-top: 23px;
+  font-size: 25px;
+  line-height: 34px;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #fe4625;
+  padding: 10px 30px;
+}

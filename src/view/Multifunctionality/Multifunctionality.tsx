@@ -6,7 +6,7 @@ import styles from "./Multifunctionality.module.css";
 
 const Multifunctionality = () => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="multifunctionality">
       <div className={styles.title}>Одно устройство для всех задач</div>
       <div className={styles.deviceImageList}>
         <Image src={boardImage} alt="Школьная доска" className={styles.deviceImage} />

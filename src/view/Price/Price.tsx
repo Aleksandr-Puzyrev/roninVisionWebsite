@@ -8,7 +8,7 @@ import styles from "./Price.module.css";
 
 const Price = () => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="price">
       <div className={styles.title}>Стоимость</div>
       <table className={styles.table}>
         <thead className={styles.tableHead}>
