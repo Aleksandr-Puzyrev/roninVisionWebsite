@@ -38,7 +38,7 @@ const FeedbackPhoneForm = ({ tab }: FeedbackPhoneFormProps) => {
   const onSubmit = async (data: Input) => {
     const toastId = toast.loading("Отправка запроса...");
     try {
-      const response = await fetch("https://formspree.io/f/meoajqol", {
+      const response = await fetch("https://formspree.io/f/mwplevdd", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, type: tab }),

@@ -4,7 +4,7 @@ import styles from "./FeedbackEmailForm.module.css";
 
 const FeedbackEmailForm = () => {
   return (
-    <form action="https://formspree.io/f/meoajqol" method="POST" className={styles.form}>
+    <form action="https://formspree.io/f/mwplevdd" method="POST" className={styles.form}>
       <p className={styles.inputLabel}>ВВЕДИТЕ ПОЧТУ</p>
       <input type="email" name="email" className={styles.input} placeholder="example@mail.ru" />
       <p className={styles.description}>После отправки почты, мы свяжемся с вами</p>
