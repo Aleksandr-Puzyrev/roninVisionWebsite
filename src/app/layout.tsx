@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import { geistMono, geistSans, inter, manrope, unbounded } from "@/consts/font-family.consts";
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Ronin Vision",
@@ -20,6 +21,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Toaster position="top-right" />
       </body>
     </html>
   );
