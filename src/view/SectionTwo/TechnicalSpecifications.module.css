@@ -1,6 +1,7 @@
 .container {
-	margin-top: 57px;
+	margin-top: 103px;
 	position: relative;
+	font-family: var(--font-manrope);
 }
 
 .h2 {

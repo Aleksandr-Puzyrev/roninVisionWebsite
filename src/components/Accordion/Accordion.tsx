@@ -14,10 +14,10 @@ const Accordion = ({ item }: AccordionProps) => {
 	return (
 		<div className={styles.accordion}>
 			<button className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
-					<div className={styles.strelkaDiv}>
+				<div className={styles.strelkaDiv}>
 					{item.characteristic}
-					<Image src={"/strelka.svg"} alt='' width={33.94} height={16} className={isOpen ? styles.strelka : styles.strelkaReverse} />
-					</div>
+					<Image src={"/strelka.svg"} alt='' width={33.94} height={16} className={isOpen ? "" : styles.strelkaReverse} />
+				</div>
 			</button>
 
 			<div className={isOpen ? styles.open : styles.collapse}>
