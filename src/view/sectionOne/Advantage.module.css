@@ -1,12 +1,14 @@
 .container {
+	margin-top: 150px;
 }
 
 .h2 {
-	font-weight: bold;
-	font-size: 40;
+	font-weight: 800;
+	font-size: 40px;
 	color: black;
 	justify-content: center;
 	display: flex;
+	line-height: 50px;
 }
 .h5 {
 	font-size: 30px;
@@ -19,18 +21,18 @@
 	font-size: 20px;
 	font-weight: 400;
 	color: black;
-	line-height: auto;
+	line-height: 27px;
 }
 
 .smallGapLeft {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 6px;
 }
 .smallGapRight {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 6px;
 	align-items: end;
 }
 
@@ -50,27 +52,30 @@
 	background-repeat: no-repeat;
 	background-position: 50% 100% ;
 	background-size: 694px 688px;
+	font-family: var(--font-manrope);
 }
 
 .leftSideContainer {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
+	justify-content: space-between;
 }
 .quickConnection {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 310px;
+	max-width: 309px;
 	gap: 10px;
 	margin-bottom: 77px;
+	line-height: 27px;
 }
 
 .camera {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 10px;
+	gap: 12px;
 	max-width: 210px;
 	margin-bottom: 54px;
 }
@@ -89,6 +94,7 @@
 	flex-direction: column;
 	text-align: right;
 	align-items: end;
+	justify-content: space-between;
 }
 
 .softSpelling {
@@ -97,7 +103,8 @@
 	justify-content: space-between;
 	align-items: end;
 	max-width: 310px;
-	gap: 10px;
+	gap: 9px;
+	margin-top: 3px;
 	margin-bottom: 77px;
 }
 
@@ -122,6 +129,7 @@
 .image {
 	display: flex;
 	gap: 13.1px;
+	min-height: 47px;
 }
 
 .bottom{
@@ -129,6 +137,7 @@
 	flex-direction: row;
 	justify-content: center;
 	text-align: left;
+	font-family: var(--font-manrope);
 }
 
 .projectingPhone {

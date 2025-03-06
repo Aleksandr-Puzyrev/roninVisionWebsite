@@ -1,11 +1,12 @@
 .container {
-	margin-top: 57px;
+	margin-top: 103px;
 	position: relative;
+	font-family: var(--font-manrope);
 }
 
 .h2 {
 	font-weight: bold;
-	font-size: 40;
+	font-size: 40px;
 	color: black;
 	justify-content: center;
 	display: flex;
