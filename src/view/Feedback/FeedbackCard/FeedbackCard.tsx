@@ -34,7 +34,7 @@ const FeedbackCard = () => {
       {tab === "telegram" || tab === "whatsApp" ? (
         <FeedbackPhoneForm tab={tab} />
       ) : (
-        <FeedbackEmailForm tab={tab} />
+        <FeedbackEmailForm />
       )}
 
       <p className={styles.terms}>
