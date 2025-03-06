@@ -182,14 +182,15 @@
     top: -11px;
     left: -100px;
   }
+
+  .cursor {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
   .container {
-    padding: 10px;
+    padding: 15px;
   }
 
-  .cursor {
-    right: 0px;
-  }
 }

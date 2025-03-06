@@ -18,7 +18,7 @@ const PreviewSection = () => {
         <div className={styles.textContainer}>
           <div className={styles.textContainerMobile}>
             <div>
-              <h1 className={styles.title}>Обучение и планерки на новой высоте</h1>
+              <h1 className={styles.title}>Обучение и планерки <br className={styles.titleBr} />на новой высоте</h1>
               <p className={styles.subtitle}>
                 Умные интерактивные панели <br />
                 для эффективных встреч и занятий

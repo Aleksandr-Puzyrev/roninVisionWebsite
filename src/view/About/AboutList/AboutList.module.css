@@ -59,3 +59,15 @@
     height: 41px;
   }
 }
+
+@media (max-width: 458px) {
+  .aboutList {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 391px) {
+  .aboutList {
+    gap: 18px;
+  }
+}
