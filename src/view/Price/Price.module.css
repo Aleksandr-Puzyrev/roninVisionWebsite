@@ -55,6 +55,7 @@
 }
 
 .priceContainer > div {
+  padding: 0 8px;
   width: max-content;
   font-weight: 800;
 }
@@ -114,5 +115,42 @@
 
   .image {
     min-width: 130px;
+  }
+}
+
+@media (max-width: 790) {
+  .modelContainer,
+  .priceContainer {
+    font-size: 18px;
+    gap: 16px;
+  }
+
+  .recomendationBody {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 670) {
+  .modelContainer,
+  .priceContainer {
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .recomendationBody {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .tableHead {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 530) {
+  .table {
+    overflow-x: scroll;
   }
 }

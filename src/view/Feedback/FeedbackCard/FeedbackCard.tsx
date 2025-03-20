@@ -10,15 +10,28 @@ import telegram from "../../../../public/telegram.svg";
 import whatsApp from "../../../../public/whatsApp.svg";
 import styles from "./FeedbackCard.module.css";
 
-const FeedbackCard = () => {
+interface FeedbackCardProps {
+  isModal?: boolean;
+}
+
+const FeedbackCard = ({ isModal }: FeedbackCardProps) => {
   const [tab, setTab] = useState<"whatsApp" | "email" | "telegram">("whatsApp");
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>
-        Записаться /<br />
-        <span className={styles.boldText}>и подобрать модель</span>
-      </h2>
+    <div
+      className={styles.container}
+      style={{ paddingRight: isModal ? "72px" : "8px", width: isModal ? "460px" : "390px" }}
+    >
+      {isModal ? (
+        <h2 className={styles.title}>
+          <span className={styles.boldText}>Оформить заказ</span>
+        </h2>
+      ) : (
+        <h2 className={styles.title}>
+          Записаться /<br />
+          <span className={styles.boldText}>и подобрать модель</span>
+        </h2>
+      )}
       <p className={styles.subtitle}>ГДЕ С ВАМИ СВЯЗАТЬСЯ?</p>
       <div className={styles.contactMethods}>
         <button className={styles.contactButton} onClick={() => setTab("whatsApp")}>

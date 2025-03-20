@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ArrowRed from "../../../public/ArrowRed.svg";
 import styles from "./ModelPageMainInfo.module.css";
+import ConnectionCardDialog from "@/components/ConnectionCardDialog/ConnectionCardDialog";
 
 interface ModelPageMainInfoProps {
   modelValue: IModels;
@@ -13,6 +14,7 @@ interface ModelPageMainInfoProps {
 
 const ModelPageMainInfo = ({ modelValue }: ModelPageMainInfoProps) => {
   const [tabImage, setTabImage] = useState<number>(1);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -48,14 +50,14 @@ const ModelPageMainInfo = ({ modelValue }: ModelPageMainInfoProps) => {
             ))}
           </div>
           <div className={styles.descriptionLinks}>
-            <Link href={"/"} className={styles.descriptionLink}>
+            <Link href={"/#specifications"} className={styles.descriptionLink}>
               <div>Все характеристики</div>
               <Image src={ArrowRed} alt="arrow" />
             </Link>
-            <Link href={"/"} className={styles.descriptionLink}>
+            {/* <Link href={"/"} className={styles.descriptionLink}>
               <div>Инструкции и документы</div>
               <Image src={ArrowRed} alt="arrow" />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className={styles.priceContainer}>
@@ -69,9 +71,10 @@ const ModelPageMainInfo = ({ modelValue }: ModelPageMainInfoProps) => {
           <div className={styles.price}>
             {modelValue.price} <span className={styles.priceRed}>₽</span>
           </div>
-          <button className={styles.priceButton}>Заказать</button>
+          <button className={styles.priceButton} onClick={() => setIsOpen(true)}>Заказать</button>
         </div>
       </div>
+      <ConnectionCardDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };

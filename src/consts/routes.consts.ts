@@ -4,7 +4,7 @@ export const Routes = [
     label: "О нас",
   },
   {
-    path: "/",
+    path: "/#advantage",
     label: "Преимущества",
   },
   {
@@ -12,15 +12,15 @@ export const Routes = [
     label: "Модели",
   },
   {
-    path: "/",
+    path: "/#specifications",
     label: "Характеристики",
   },
   {
-    path: "/",
+    path: "/#documentation",
     label: "Госзакупки",
   },
   {
-    path: "/",
+    path: "/#clients",
     label: "Отзывы",
   },
   {

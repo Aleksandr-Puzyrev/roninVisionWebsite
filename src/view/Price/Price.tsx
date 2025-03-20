@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Arrow from "../../../public/Arrow.svg";
@@ -5,8 +7,12 @@ import SizeBig from "../../../public/SizeBig.png";
 import SizeMedium from "../../../public/SizeMedium.png";
 import SizeMini from "../../../public/SizeMini.png";
 import styles from "./Price.module.css";
+import { useState } from "react";
+import ConnectionCardDialog from "@/components/ConnectionCardDialog/ConnectionCardDialog";
 
 const Price = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  
   return (
     <div className={styles.section} id="price">
       <div className={styles.title}>Стоимость</div>
@@ -85,7 +91,9 @@ const Price = () => {
       </table>
       <div className={styles.actionContainer}>
         <div></div>
-        <button className={styles.button}>Оставить заявку</button>
+        <button className={styles.button} onClick={() => setIsOpen(true)}>
+          Оставить заявку
+        </button>
         <div className={styles.linkContainer}>
           <Link href={"/"} className={styles.link}>
             Узнать больше
@@ -93,6 +101,7 @@ const Price = () => {
           <Image src={Arrow} alt="arrow" className={styles.icon} />
         </div>
       </div>
+      <ConnectionCardDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

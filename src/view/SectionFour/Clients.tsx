@@ -7,7 +7,7 @@ import BiznessInkybator from "../../../public/BiznessInkybator.png"
 
 const Clients = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="clients">
 			<h2 className={styles.h2}>Наши клиенты</h2>
 			<div className={styles.secondaryContainer}>
 				<div className={styles.divImage}>

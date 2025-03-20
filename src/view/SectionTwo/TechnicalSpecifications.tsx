@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const TechnicalSpecifications = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="specifications">
 			<Image src={"/elipse1.svg"} className={styles.elipse1} alt='' width={401} height={401} />
 			<Image src={"/elipse2.svg"} className={styles.elipse2} alt='' width={110} height={110} />
 			<div className={styles.h2} >Технические характеристики</div>

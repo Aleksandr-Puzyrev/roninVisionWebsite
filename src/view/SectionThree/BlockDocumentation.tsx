@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const BlockDocumentation = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="documentation">
 			<h2 className={styles.h2}>Подготовим всю необходимую документацию<br></br>для участия в гос закупках</h2>
 			<div className={styles.secondaryContainer}>
 			<Image src={"/MagazinPokypok.png"}  alt='' width={535.79} height={102} />
