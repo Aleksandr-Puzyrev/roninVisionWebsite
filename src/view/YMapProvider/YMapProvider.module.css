@@ -117,11 +117,31 @@
     font-size: 20px;
     line-height: 125%;
   }
+
+  .contactsTitle {
+    font-size: 16px;
+    line-height: 125%;
+  }
+  
+  .contactsBody {
+    font-size: 10px;
+    line-height: 115%;
+  }
 }
 
 @media (max-width: 380px) {
   .title {
     font-size: 18px;
     line-height: 115%;
+  }
+
+  .contactsTitle {
+    font-size: 14px;
+    line-height: 115%;
+  }
+  
+  .contactsBody {
+    font-size: 8px;
+    line-height: 105%;
   }
 }

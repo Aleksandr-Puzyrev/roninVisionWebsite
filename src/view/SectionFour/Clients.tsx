@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Clients.module.css'
 import Image from 'next/image';
-import Ivanov from "../../../public/Ivanov.png"
+// import Ivanov from "../../../public/Ivanov.png"
 import Tishinkoff from "../../../public/Tishinkoff.png"
 import BiznessInkybator from "../../../public/BiznessInkybator.png"
 
@@ -10,10 +10,10 @@ const Clients = () => {
 		<div className={styles.container} id="clients">
 			<h2 className={styles.h2}>Наши клиенты</h2>
 			<div className={styles.secondaryContainer}>
-				<div className={styles.divImage}>
+				{/* <div className={styles.divImage}>
 					<Image src={Ivanov} alt='' />
 					<p className={styles.text}>Детский сад №</p>
-				</div>
+				</div> */}
 				<div className={styles.divImage}>
 					<Image src={Tishinkoff} alt='' />
 				</div>

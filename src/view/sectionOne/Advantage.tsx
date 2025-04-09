@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Advantage = () => {
 	return (
 		<div className={styles.container} id="advantage">
-			<h2 className={styles.h2}>Преимщуества</h2>
+			<h2 className={styles.h2}>Преимущества</h2>
 			<div className={styles.secondaryContainer} >
 				<div className={styles.leftSideContainer}>
 					<div className={styles.quickConnection}>
